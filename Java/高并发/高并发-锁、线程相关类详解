@@ -1,50 +1,68 @@
 #1.锁
 ##1.1 ReentrantLock类详解
 <pre>
-
-
+https://www.cnblogs.com/xrq730/p/4979021.html ReentrantLock实现原理深入探究
+http://blog.csdn.net/antony9118/article/details/52664125   使用场景
 </pre>
-
 
 ##1.2 Condition类详解
 <pre>
-
-
+http://blog.csdn.net/u011784767/article/details/51656697
 </pre>
-
-
 
 ##1.3 信号量Semaphore类详解
 <pre>
+http://blog.csdn.net/lipeng_bigdata/article/details/52165426   Java并发之Semaphore详解
+http://blog.csdn.net/javaloveiphone/article/details/54730466  使用实例
+</pre>
 
-
+##1.4 ReadWriteLock(ReentrantReadWriteLock)读写锁详解
+<pre>
+http://www.jdon.com/idea/java/java-8-lambdas-readwritelock.html 使用Java8的Lambda简化ReadWriteLock
+https://www.cnblogs.com/sheeva/p/6480116.html  ReentrantReadWriteLock源码分析
 </pre>
 
 
-##1.4 ReadWriteLock读写锁详解
+##1.5 倒计数器CountDownLatch类详解
 <pre>
+任务A等待多个任务完成后，再执行
 
-
-</pre>
-
-
-##1.5 倒计时器CountDownLatch类详解
-<pre>
-
-
+方法：countDown()、 await()
 </pre>
 
 
 ##1.6 循环栅栏CyclicBarrier类详解
 <pre>
-
-
+一组任务达到某个状态，再一起执行
+方法：await()
 </pre>
 
 ##1.7 线程阻塞工具栏LockSupport类详解
 <pre>
-
+http://blog.csdn.net/opensure/article/details/53349698
 
 </pre>
 
-##1.8 
+#2 线程Executors、ExecutorService、CompletionService
+##2.1 Executors、ExecutorService、CompletionService
+<pre>
+http://blog.csdn.net/luckey_zh/article/details/53815694  synchronized(this)、synchronized(class)与synchronized(Object)的区别
+
+</pre>
+
+
+##2.2 ForkJoinPool、ForkJoinTask、RecursiveTask、RecursiveAction
+<pre>
+https://yq.aliyun.com/articles/48739?spm=a2c4e.11153940.0.0.543f08e0JicHUr
+https://yq.aliyun.com/articles/48736?spm=a2c4e.11153940.0.0.543f08e0JicHUr
+<pre/>
+
+##2.3 Callable、Future、FutureTask、RunnableFuture
+<pre>
+FutureTask可用于异步获取执行结果或取消执行任务的场景;
+FutureTask还可以确保即使调用了多次run方法，它都只会执行一次Runnable或者Callable任务，或者通过cancel取消FutureTask的执行等
+</pre>
+<pre>
+http://blog.csdn.net/chenliguan/article/details/54345993  FutureTask的用法及解析
+https://www.cnblogs.com/ruiati/p/6133174.html
+<pre/>
